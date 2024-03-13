@@ -1,0 +1,1 @@
+Denna uppgiften kommer behandla höstterminen 2023s ramschema och sortera det på flera vis.
