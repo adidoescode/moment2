@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#scheduleContainer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-radius: 6px;
+    padding: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    min-height: 1000px;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#searchText {
+    font-size: 1.25em;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+input {
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: grey;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.25em;
+    margin-bottom: 50px;
+}
+
+.first-column,
+.second-column,
+.third-column {
+    display: inline-block;
+    vertical-align: top;
+}
+
+li {
+    list-style-type: none;
+    margin: 30px 10px;
+    font-size: 1.25em;
+
+}
+
+.third-column li {
+    text-align: center;
+}
+
+.first-column {
+    margin-right: 20px;
+}
+
+#firstHeader,
+#secondHeader,
+#thirdHeader {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#firstHeader:hover,
+#secondHeader:hover,
+#thirdHeader:hover {
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid grey;
+}
