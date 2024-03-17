@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 2</title>
+    <!-- Lägger in stylesheetet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Då vi använder NPM måste man ange type=module för att den ska paketeras korrekt -->
     <script src="main.js" type="module"></script>
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap"
@@ -23,20 +26,20 @@
         <div id="scheduleContainer">
             <p id="searchText">Sök</p>
             <input type="search" id="searchBar" placeholder="Sök efter kurskod eller kursnamn">
-
+            <!-- Divs för att lättare kunna stylea innehållet i kolumnerna-->
             <div class="first-column">
+                <p id="firstHeader"><u>Kurskod</u></p>
                 <ul id="firstCol">
-                    <li id="firstHeader"><u>Kurskod</u></li>
                 </ul>
             </div>
             <div class="second-column">
+                <p id="secondHeader"><u>Kursnamn</u></p>
                 <ul id="secondCol">
-                    <li id="secondHeader"><u>Kursnamn</u></li>
                 </ul>
             </div>
             <div class="third-column">
+                <p id="thirdHeader"><u>Progression</u></p>
                 <ul id="thirdCol">
-                    <li id="thirdHeader"><u>Progression</u></li>
                 </ul>
             </div>
     </main>

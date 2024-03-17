@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
+/* Lägger till font */
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Stylear containern som kommer innehålla alla kolumner av objekt */
 #scheduleContainer {
     width: 80%;
     margin: 0 auto;
@@ -27,10 +29,12 @@ h1 {
     font-size: 1.25em;
 }
 
+/* Ändrar textfärgen i placeholdern */
 input::placeholder {
     color: grey;
 }
 
+/* Ändrar styles för sökbaren. Bl.a font-size, padding för att texten ska få utrymme, och border samt border-radius för estetiska skäl */
 input {
     padding: 20px;
     border: 1px solid grey;
@@ -42,6 +46,7 @@ input {
     margin-bottom: 50px;
 }
 
+/* Ger kolumnerna dessa attribut för att kolumnerna ska vara radade bredvid varandra och inte staplas på varandra */
 .first-column,
 .second-column,
 .third-column {
@@ -49,6 +54,11 @@ input {
     vertical-align: top;
 }
 
+p {
+    font-size: 1.25em;
+}
+
+/* Ändrar styles på li-elementen från API:n */
 li {
     list-style-type: none;
     margin: 30px 10px;
@@ -56,6 +66,7 @@ li {
 
 }
 
+/* Lägger progression centrerad över dess element för estetiska skäl */
 .third-column li {
     text-align: center;
 }
@@ -71,6 +82,7 @@ li {
     margin-top: 20px;
 }
 
+/* Då kolumnernas knapp är ett p-element ger jag de cursor:pointer för att de ska tolkas som en knapp */
 #firstHeader:hover,
 #secondHeader:hover,
 #thirdHeader:hover {
