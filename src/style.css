@@ -7,6 +7,8 @@
 /* Lägger till font */
 body {
     font-family: 'Montserrat', sans-serif;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Stylear containern som kommer innehålla alla kolumner av objekt */
@@ -95,4 +97,82 @@ footer {
     padding: 20px;
     font-size: 1.5em;
     border: 1px solid grey;
+}
+
+/* Media query >1400px */
+@media screen and (min-width:1400px) {
+    ul li {
+        font-size: 1.5em;
+    }
+
+    /* Ger alla kolumn-headers större font-size för att urskilja dem */
+    #scheduleContainer #firstHeader,
+    #secondHeader,
+    #thirdHeader {
+        font-size: 1.75em;
+    }
+
+    h1 {
+        font-size: 2.25em;
+    }
+
+    #searchText {
+        font-size: 1.5em;
+    }
+
+    /* Gör texten inuti searchbaren större för att enklare synas */
+    input::placeholder {
+        font-size: 1.25em;
+    }
+
+    input {
+        padding: 25px;
+    }
+}
+
+/* Media query >1000px */
+@media screen and (max-width:1000px) {
+
+    /* Tar bort den minst relevanta kolumnen för att ge plats åt kursnamn och progression */
+    .first-column {
+        display: none;
+    }
+}
+
+/* Media query >500px */
+@media screen and (max-width: 500px) {
+    #scheduleContainer {
+        width: 100%;
+        padding: 10px;
+        margin-top: 30px;
+        margin: 0 auto;
+    }
+
+
+    .colGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .colGrid li {
+        font-size: 1.125em;
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+
+    #scheduleContainer #secondHeader {
+        font-size: 1.25em;
+    }
+
+    #scheduleContainer #thirdHeader {
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+
+
+
+
+
 }

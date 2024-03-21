@@ -23,24 +23,27 @@
         </h1>
     </header>
     <main>
+        <!-- Diven som kommer innehålla alla kolumner -->
         <div id="scheduleContainer">
             <p id="searchText">Sök</p>
             <input type="search" id="searchBar" placeholder="Sök efter kurskod eller kursnamn">
-            <!-- Divs för att lättare kunna stylea innehållet i kolumnerna-->
-            <div class="first-column">
-                <p id="firstHeader"><u>Kurskod</u></p>
-                <ul id="firstCol">
-                </ul>
-            </div>
-            <div class="second-column">
-                <p id="secondHeader"><u>Kursnamn</u></p>
-                <ul id="secondCol">
-                </ul>
-            </div>
-            <div class="third-column">
-                <p id="thirdHeader"><u>Progression</u></p>
-                <ul id="thirdCol">
-                </ul>
+            <!-- Lägger en div med namn colGrid för att sedan kunna stylea för mindre skärmstorlekar -->
+            <div class="colGrid">
+                <div class="first-column">
+                    <p id="firstHeader"><u>Kurskod</u></p>
+                    <ul id="firstCol">
+                    </ul>
+                </div>
+                <div class="second-column">
+                    <p id="secondHeader"><u>Kursnamn</u></p>
+                    <ul id="secondCol">
+                    </ul>
+                </div>
+                <div class="third-column">
+                    <p id="thirdHeader"><u>Progress</u></p>
+                    <ul id="thirdCol">
+                    </ul>
+                </div>
             </div>
     </main>
     <footer>
